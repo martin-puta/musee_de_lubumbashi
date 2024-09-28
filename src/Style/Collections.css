@@ -1,0 +1,32 @@
+.image-gallery{
+    max-width: 100%;
+}
+.image-gallery img {
+    max-width: 50rem;
+}
+.image-gallery {  
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */  
+    grid-template-rows: repeat(2, 1fr); /* 2 lignes */  
+    gap: 16px; /* Espace entre les images */  
+    margin: 20px 0; /* Marges autour de la galerie */  
+    height: 400px; /* Hauteur fixe pour que la grille soit carrée */  
+  }  
+  
+  .image-gallery img {  
+    width: 100%; /* Images occupent toute la largeur de la colonne */  
+    height: 100%; /* Images occupent toute la hauteur de la ligne */  
+    object-fit: cover; /* Couvre l'image tout en maintenant le ratio */  
+    border-radius: 8px; /* Coins arrondis pour un style moderne */  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet 3D */  
+    transition: transform 0.3s ease; /* Transition pour l'effet de survol */  
+  }  
+  
+  .image-gallery img:hover {  
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */  
+  }
+
+.container-principal{
+    display: block;
+    flex-direction: column;
+}  

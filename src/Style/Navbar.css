@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    font-size: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #4F9CF9;
+    color: white;
+    position: fixed;
+    width: 100%;
+    
+}
+.nav-link{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+.Home,
+.skils,
+.About,
+.contacts,
+.signUp{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.signUp{
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+.Mobile-menu-icon{
+    display: none;
+}
+
+@media screen and (max-width : 700px){
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .nav-link-Mobile{
+        display: block;
+        position: absolute;
+        list-style: none;
+        background-color: #056fdf;
+        left: 0;
+        top: 75px;
+        transition: all 0.5 ease-out;
+        width: 100%;
+    }
+.Home,
+.skils,
+.About,
+.contacts,
+.signUp{
+    color: white;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5 ease;
+  } 
+  .signUp{
+    border: none;
+  }
+  .Mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    background-color: #056fdf;
+    border: none;
+    outline: none;
+    right: 25px;
+  }
+}
